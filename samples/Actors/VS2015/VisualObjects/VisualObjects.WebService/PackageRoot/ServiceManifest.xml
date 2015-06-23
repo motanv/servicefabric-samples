@@ -32,7 +32,7 @@
       <!-- This endpoint is used by the web communication listener to obtain the port on which to 
        listen.
         -->
-      <Endpoint Name="ServiceEndpoint" Type="Input" Protocol="http" Port="80" />
+      <Endpoint Name="ServiceEndpoint" Type="Input" Protocol="http" Port="8081" />
     </Endpoints>
   </Resources>
 </ServiceManifest>
