@@ -14,11 +14,13 @@ namespace VisualObjects.WebService
 
     public class WebSocketApp : IDisposable
     {
-        private CancellationTokenSource cancellationSource;
+        private readonly CancellationTokenSource cancellationSource;
+        private readonly IVisualObjectsBox visualObjectBox;
         private HttpListener httpListener;
 
-        public WebSocketApp()
+        public WebSocketApp(IVisualObjectsBox visualObjectBox)
         {
+            this.visualObjectBox = visualObjectBox;
             this.cancellationSource = new CancellationTokenSource();
         }
 
@@ -52,7 +54,7 @@ namespace VisualObjects.WebService
             }
         }
 
-        public void Start(string url, IVisualObjectsBox visualObjectBox)
+        public void Start(string url)
         {
             if (!url.EndsWith("/"))
             {
@@ -93,7 +95,7 @@ namespace VisualObjects.WebService
                                     {
                                         cancellationToken.ThrowIfCancellationRequested();
 
-                                        string response = await visualObjectBox.GetObjectsAsync(cancellationToken);
+                                        string response = await this.visualObjectBox.GetObjectsAsync(cancellationToken);
                                         byte[] buffer = Encoding.UTF8.GetBytes(response);
 
                                         try

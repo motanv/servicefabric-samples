@@ -55,10 +55,10 @@ namespace VisualObjects.WebService
         {
             ServiceEventSource.Current.Message("Starting web server on {0}", this.listeningAddress);
 
-            this.webSocketApp = new WebSocketApp();
+            this.webSocketApp = new WebSocketApp(this.visualObjectsBox);
 
             this.webApp = WebApp.Start<Startup>(this.listeningAddress);
-            this.webSocketApp.Start(this.listeningAddress + this.webSocketRoot, this.visualObjectsBox);
+            this.webSocketApp.Start(this.listeningAddress + this.webSocketRoot);
 
             return Task.FromResult(this.publishAddress);
         }
