@@ -13,3 +13,6 @@ To run this sample, you'll need to download a couple WebGL JavaScript files and 
 1. Get [webgl-utils.js](https://github.com/KhronosGroup/WebGL/blob/master/sdk/demos/common/webgl-utils.js)
 2. Place **webgl-utils.js** in **VisualObjects.WebService\wwwroot\Scripts\webgl-utils.js.**
 3. Make sure the **Build Action** on this file is set to **Content** in the file properties (right-click in Solution Explorer, select Properties)
+
+
+With these JS files in place, press ctrl+F5 in Visual Studio to run (or just F5 to debug). Once the application has started, go to [http://localhost:8081/visualobjects](http://localhost:8081/visualobjects). Try opening it in multiple browser windows or on multiple machines to see how the server-side calculation produces the same result on every screen.
