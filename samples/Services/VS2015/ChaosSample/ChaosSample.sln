@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ChaosTestApplication", "ChaosTestApplication\ChaosTestApplication.sfproj", "{3E5E6309-0433-4B98-A670-2B8E85E63068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaosTest.WebService", "ChaosTest.WebService\ChaosTest.WebService.csproj", "{626647EC-FACA-48A0-B926-715ADBF59A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaosTest.Common", "ChaosTest.Common\ChaosTest.Common.csproj", "{71088CC1-4E33-4149-9940-7B2A8E3D18C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaosTest.ChaosService", "ChaosTest.ChaosService\ChaosTest.ChaosService.csproj", "{38DEF29D-7204-4ACB-BEB7-35B49D02B393}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E5E6309-0433-4B98-A670-2B8E85E63068}.Debug|x64.ActiveCfg = Debug|x64
+		{3E5E6309-0433-4B98-A670-2B8E85E63068}.Debug|x64.Build.0 = Debug|x64
+		{3E5E6309-0433-4B98-A670-2B8E85E63068}.Debug|x64.Deploy.0 = Debug|x64
+		{3E5E6309-0433-4B98-A670-2B8E85E63068}.Release|x64.ActiveCfg = Release|x64
+		{3E5E6309-0433-4B98-A670-2B8E85E63068}.Release|x64.Build.0 = Release|x64
+		{3E5E6309-0433-4B98-A670-2B8E85E63068}.Release|x64.Deploy.0 = Release|x64
+		{626647EC-FACA-48A0-B926-715ADBF59A3C}.Debug|x64.ActiveCfg = Debug|x64
+		{626647EC-FACA-48A0-B926-715ADBF59A3C}.Debug|x64.Build.0 = Debug|x64
+		{626647EC-FACA-48A0-B926-715ADBF59A3C}.Release|x64.ActiveCfg = Release|x64
+		{626647EC-FACA-48A0-B926-715ADBF59A3C}.Release|x64.Build.0 = Release|x64
+		{71088CC1-4E33-4149-9940-7B2A8E3D18C2}.Debug|x64.ActiveCfg = Debug|x64
+		{71088CC1-4E33-4149-9940-7B2A8E3D18C2}.Debug|x64.Build.0 = Debug|x64
+		{71088CC1-4E33-4149-9940-7B2A8E3D18C2}.Release|x64.ActiveCfg = Release|x64
+		{71088CC1-4E33-4149-9940-7B2A8E3D18C2}.Release|x64.Build.0 = Release|x64
+		{38DEF29D-7204-4ACB-BEB7-35B49D02B393}.Debug|x64.ActiveCfg = Debug|x64
+		{38DEF29D-7204-4ACB-BEB7-35B49D02B393}.Debug|x64.Build.0 = Debug|x64
+		{38DEF29D-7204-4ACB-BEB7-35B49D02B393}.Release|x64.ActiveCfg = Release|x64
+		{38DEF29D-7204-4ACB-BEB7-35B49D02B393}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
